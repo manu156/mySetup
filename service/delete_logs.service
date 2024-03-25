@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete log files in ~/Documents/logs/
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'find /home/manu/Documents/logs/ -type f -name "*" -delete'
